@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Theater of Dreams — Театральная компания</title>
+  <meta name="description" content="Театральная компания Theater of Dreams: премьеры, афиша, история театра и бронирование билетов." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="cursor-glow"></div>
+
+  <header class="header" id="header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">TD</span>
+        <span class="logo-text">Theater of Dreams</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="active">Главная</a>
+        <a href="performances.html">Афиша</a>
+        <a href="about.html">О театре</a>
+        <a href="contacts.html">Контакты</a>
+        <a href="#tickets" class="btn btn-sm">Билеты</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <h1>Сцена, где каждая история оживает</h1>
+          <p class="hero-text">
+            Премьеры, камерные постановки, классика и современные драмы в пространстве,
+            созданном для сильных эмоций и живого контакта со зрителем.
+          </p>
+          <div class="hero-actions">
+            <a href="performances.html" class="btn">Смотреть афишу</a>
+            <a href="#about-preview" class="btn btn-secondary">О компании</a>
+          </div>
+          <div class="hero-badges">
+            <span>12+ премьер в сезоне</span>
+            <span>Живая музыка</span>
+            <span>Камерная и большая сцена</span>
+          </div>
+        </div>
+
+        <div class="hero-card reveal delay-1">
+          <div class="show-card featured">
+            <div class="show-poster">
+              <span class="show-tag">Премьера</span>
+            </div>
+            <div class="show-info">
+              <h3>Король и маска</h3>
+              <p>Историческая драма в двух актах</p>
+              <ul>
+                <li>29 марта • 19:00</li>
+                <li>Большая сцена</li>
+                <li>от 35 BYN</li>
+              </ul>
+              <button class="btn open-modal"
+                data-title="Король и маска"
+                data-genre="Историческая драма"
+                data-date="29 марта • 19:00"
+                data-stage="Большая сцена"
+                data-price="от 35 BYN"
+                data-description="Спектакль о власти, иллюзиях и цене выбора. Атмосферная сценография, живой оркестр и напряженная драматургия.">
+                Подробнее
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats section">
+      <div class="container grid-4">
+        <article class="stat-card reveal">
+          <h3 class="counter" data-target="18">50</h3>
+          <p>Лет театральной истории</p>
+        </article>
+        <article class="stat-card reveal delay-1">
+          <h3 class="counter" data-target="54">34</h3>
+          <p>Спектакля в репертуаре</p>
+        </article>
+        <article class="stat-card reveal delay-2">
+          <h3 class="counter" data-target="120">100+</h3>
+          <p>Актеров и постановщиков</p>
+        </article>
+        <article class="stat-card reveal delay-3">
+          <h3 class="counter" data-target="240">100+</h3>
+          <p>Показов в год</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="tickets">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Ближайшие события</p>
+          <h2>Актуальные постановки</h2>
+          <p>Собрали спектакли, которые чаще всего выбирают зрители в этом месяце.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="performance-card reveal">
+            <div class="performance-image img-1"></div>
+            <div class="performance-body">
+              <span class="chip">Драма</span>
+              <h3>Ночь без аплодисментов</h3>
+              <p>Психологическая постановка о страхе, памяти и цене откровенности.</p>
+              <div class="performance-meta">
+                <span>27 марта</span>
+                <span>Малая сцена</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="performance-card reveal delay-1">
+            <div class="performance-image img-2"></div>
+            <div class="performance-body">
+              <span class="chip">Классика</span>
+              <h3>Вишневый вечер</h3>
+              <p>Современное сценическое прочтение классического произведения.</p>
+              <div class="performance-meta">
+                <span>30 марта</span>
+                <span>Большая сцена</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="performance-card reveal delay-2">
+            <div class="performance-image img-3"></div>
+            <div class="performance-body">
+              <span class="chip">Музыкальный</span>
+              <h3>Город огней</h3>
+              <p>Музыка, танец и кинематографичная пластика в одном спектакле.</p>
+              <div class="performance-meta">
+                <span>2 апреля</span>
+                <span>Экспериментальная сцена</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about-preview">
+      <div class="container split">
+        <div class="split-media reveal">
+          <div class="media-card"></div>
+        </div>
+        <div class="split-content reveal delay-1">
+          <p class="eyebrow">О компании</p>
+          <h2>Мы соединяем классику и современную сцену</h2>
+          <p>
+            Theater of Dreams — театральная компания, которая создает постановки для широкой
+            аудитории, сохраняя глубину драматургии, выразительную режиссуру и высокий уровень исполнения.
+          </p>
+          <p>
+            Мы работаем с репертуаром разных жанров: от камерных драм до масштабных музыкальных спектаклей,
+            уделяя особое внимание визуальному языку и атмосфере.
+          </p>
+          <a href="about.html" class="text-link">Узнать больше</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section accent-section">
+      <div class="container cta reveal">
+        <div>
+          <p class="eyebrow">Подписка на сезон</p>
+          <h2>Получайте новости о премьерах первыми</h2>
+          <p>Оставьте email и узнавайте о старте продаж, специальных показах и закрытых встречах с труппой.</p>
+        </div>
+
+        <form class="subscribe-form" id="subscribeForm">
+          <input type="email" id="subscribeEmail" placeholder="Ваш email" required />
+          <button type="submit" class="btn">Подписаться</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo footer-logo">
+          <span class="logo-mark">VC</span>
+          <span class="logo-text">Theater of Dreams</span>
+        </a>
+        <p>Театральная компания с авторским репертуаром, сильной визуальной эстетикой и живым диалогом со зрителем.</p>
+      </div>
+
+      <div>
+        <h4>Навигация</h4>
+        <a href="index.html">Главная</a>
+        <a href="performances.html">Афиша</a>
+        <a href="about.html">О театре</a>
+        <a href="contacts.html">Контакты</a>
+      </div>
+
+      <div>
+        <h4>Контакты</h4>
+        <p>г. Брест, Театральная площадь, 7</p>
+        <p>+375 (29) 000-00-00</p>
+        <p>hello@velvetcurtain.by</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
