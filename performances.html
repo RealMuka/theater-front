@@ -1,11 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perforamnces</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Афиша — Velvet Curtain</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    
+  <div class="cursor-glow"></div>
+
+  <header class="header" id="header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">VC</span>
+        <span class="logo-text">Velvet Curtain</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html">Главная</a>
+        <a href="performances.html" class="active">Афиша</a>
+        <a href="about.html">О театре</a>
+        <a href="contacts.html">Контакты</a>
+        <a href="contacts.html" class="btn btn-sm">Бронь</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page-top">
+    <section class="page-hero small">
+      <div class="container reveal">
+        <p class="eyebrow">Репертуар</p>
+        <h1>Афиша спектаклей</h1>
+        <p>Выберите жанр и найдите постановку, которая подходит под ваше настроение.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filters reveal">
+          <button class="filter-btn active" data-filter="all">Все</button>
+          <button class="filter-btn" data-filter="drama">Драма</button>
+          <button class="filter-btn" data-filter="classic">Классика</button>
+          <button class="filter-btn" data-filter="musical">Музыкальный</button>
+          <button class="filter-btn" data-filter="experimental">Эксперимент</button>
+        </div>
+
+        <div class="cards-grid performances-list">
+          <article class="performance-card filter-item reveal" data-category="drama">
+            <div class="performance-image img-1"></div>
+            <div class="performance-body">
+              <span class="chip">Драма</span>
+              <h3>Ночь без аплодисментов</h3>
+              <p>Интимная история о правде, которую невозможно удержать за кулисами.</p>
+              <div class="performance-meta">
+                <span>27 марта • 19:30</span>
+                <span>Малая сцена</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="performance-card filter-item reveal delay-1" data-category="classic">
+            <div class="performance-image img-2"></div>
+            <div class="performance-body">
+              <span class="chip">Классика</span>
+              <h3>Вишневый вечер</h3>
+              <p>Сдержанная и визуально богатая интерпретация великой классики.</p>
+              <div class="performance-meta">
+                <span>30 марта • 18:00</span>
+                <span>Большая сцена</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="performance-card filter-item reveal delay-2" data-category="musical">
+            <div class="performance-image img-3"></div>
+            <div class="performance-body">
+              <span class="chip">Музыкальный</span>
+              <h3>Город огней</h3>
+              <p>Энергия оркестра, танца и света в динамичном городском спектакле.</p>
+              <div class="performance-meta">
+                <span>2 апреля • 20:00</span>
+                <span>Экспериментальная сцена</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="performance-card filter-item reveal" data-category="experimental">
+            <div class="performance-image img-4"></div>
+            <div class="performance-body">
+              <span class="chip">Эксперимент</span>
+              <h3>Белый шум</h3>
+              <p>Пластический спектакль о цифровой тишине и человеческом присутствии.</p>
+              <div class="performance-meta">
+                <span>4 апреля • 21:00</span>
+                <span>Черный зал</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="performance-card filter-item reveal delay-1" data-category="drama">
+            <div class="performance-image img-5"></div>
+            <div class="performance-body">
+              <span class="chip">Драма</span>
+              <h3>Последняя реплика</h3>
+              <p>История актера, который пытается удержать сцену и самого себя.</p>
+              <div class="performance-meta">
+                <span>6 апреля • 19:00</span>
+                <span>Большая сцена</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="performance-card filter-item reveal delay-2" data-category="classic">
+            <div class="performance-image img-6"></div>
+            <div class="performance-body">
+              <span class="chip">Классика</span>
+              <h3>Гамлет. Тишина</h3>
+              <p>Минималистичное прочтение трагедии через свет, паузу и внутренний конфликт.</p>
+              <div class="performance-meta">
+                <span>9 апреля • 18:30</span>
+                <span>Большая сцена</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo footer-logo">
+          <span class="logo-mark">VC</span>
+          <span class="logo-text">Velvet Curtain</span>
+        </a>
+        <p>Современный театральный бренд с сильным визуальным стилем и продуманным зрительским опытом.</p>
+      </div>
+      <div>
+        <h4>Разделы</h4>
+        <a href="index.html">Главная</a>
+        <a href="performances.html">Афиша</a>
+        <a href="about.html">О театре</a>
+        <a href="contacts.html">Контакты</a>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <p>г. Брест, Театральная площадь, 7</p>
+        <p>hello@velvetcurtain.by</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
 </body>
 </html>
