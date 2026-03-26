@@ -1,11 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacts</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Контакты — Velvet Curtain</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    
+  <div class="cursor-glow"></div>
+
+  <header class="header" id="header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">VC</span>
+        <span class="logo-text">Velvet Curtain</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html">Главная</a>
+        <a href="performances.html">Афиша</a>
+        <a href="about.html">О театре</a>
+        <a href="contacts.html" class="active">Контакты</a>
+        <a href="performances.html" class="btn btn-sm">Афиша</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page-top">
+    <section class="page-hero small">
+      <div class="container reveal">
+        <p class="eyebrow">Связь и бронирование</p>
+        <h1>Контакты</h1>
+        <p>Свяжитесь с нами для брони, сотрудничества, организации мероприятий и корпоративных предложений.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+        <div class="contact-info reveal">
+          <h2>Наши контакты</h2>
+          <div class="contact-card">
+            <p><strong>Адрес:</strong> г. Брест, Театральная площадь, 7</p>
+            <p><strong>Телефон:</strong> +375 (29) 000-00-00</p>
+            <p><strong>Email:</strong> hello@velvetcurtain.by</p>
+            <p><strong>Время работы кассы:</strong> 10:00–20:00</p>
+          </div>
+
+          <div class="faq">
+            <button class="faq-item">
+              <span>Можно ли забронировать билеты онлайн?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-answer">Да, заявка отправляется через форму, после чего менеджер подтверждает бронь.</div>
+
+            <button class="faq-item">
+              <span>Есть ли групповые посещения?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-answer">Да, доступны специальные предложения для компаний, школ и частных событий.</div>
+
+            <button class="faq-item">
+              <span>Можно ли вернуть билет?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-answer">Условия возврата зависят от даты спектакля и правил бронирования.</div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal delay-1">
+          <form class="contact-form" id="contactForm">
+            <h2>Оставить заявку</h2>
+            <div class="form-group">
+              <label for="name">Имя</label>
+              <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="topic">Тема</label>
+              <select id="topic" name="topic" required>
+                <option value="">Выберите тему</option>
+                <option>Бронирование билетов</option>
+                <option>Корпоративное мероприятие</option>
+                <option>Сотрудничество</option>
+                <option>Общий вопрос</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Сообщение</label>
+              <textarea id="message" name="message" rows="5" placeholder="Расскажите, что вас интересует" required></textarea>
+            </div>
+
+            <button type="submit" class="btn">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo footer-logo">
+          <span class="logo-mark">VC</span>
+          <span class="logo-text">Velvet Curtain</span>
+        </a>
+        <p>Открыты для зрителей, партнеров и новых сценических проектов.</p>
+      </div>
+      <div>
+        <h4>Разделы</h4>
+        <a href="index.html">Главная</a>
+        <a href="performances.html">Афиша</a>
+        <a href="about.html">О театре</a>
+        <a href="contacts.html">Контакты</a>
+      </div>
+      <div>
+        <h4>Связь</h4>
+        <p>+375 (29) 000-00-00</p>
+        <p>hello@velvetcurtain.by</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="js/app.js"></script>
 </body>
 </html>

@@ -1,11 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>О театре — Velvet Curtain</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    
+  <div class="cursor-glow"></div>
+
+  <header class="header" id="header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">VC</span>
+        <span class="logo-text">Velvet Curtain</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html">Главная</a>
+        <a href="performances.html">Афиша</a>
+        <a href="about.html" class="active">О театре</a>
+        <a href="contacts.html">Контакты</a>
+        <a href="contacts.html" class="btn btn-sm">Связаться</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page-top">
+    <section class="page-hero small">
+      <div class="container reveal">
+        <p class="eyebrow">История и миссия</p>
+        <h1>О театральной компании</h1>
+        <p>Мы создаем сценические события, в которых эстетика, драматургия и зрительский опыт работают как единое целое.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div class="split-content reveal">
+          <h2>Наша философия</h2>
+          <p>
+            Velvet Curtain развивает театр как пространство эмоционального диалога.
+            Мы объединяем классические тексты, современную режиссуру и визуальные эксперименты.
+          </p>
+          <p>
+            Для нас важны сильный актерский ансамбль, сценография, музыка и атмосфера,
+            которая начинается еще до первого звонка.
+          </p>
+        </div>
+        <div class="split-media reveal delay-1">
+          <div class="media-card alt"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Ценности</p>
+          <h2>На чем строится наш репертуар</h2>
+        </div>
+
+        <div class="grid-3">
+          <article class="value-card reveal">
+            <h3>Смысл</h3>
+            <p>Каждая постановка поднимает тему, которая откликается современному зрителю.</p>
+          </article>
+          <article class="value-card reveal delay-1">
+            <h3>Форма</h3>
+            <p>Мы работаем с выразительным светом, сценографией, пластикой и музыкальной драматургией.</p>
+          </article>
+          <article class="value-card reveal delay-2">
+            <h3>Контакт</h3>
+            <p>Зритель не наблюдает со стороны — он становится частью сценического переживания.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Команда</p>
+          <h2>Люди сцены</h2>
+        </div>
+
+        <div class="team-grid">
+          <article class="team-card reveal">
+            <div class="team-photo"></div>
+            <h3>Анна Мельник</h3>
+            <p>Художественный руководитель</p>
+          </article>
+          <article class="team-card reveal delay-1">
+            <div class="team-photo photo-2"></div>
+            <h3>Илья Воронов</h3>
+            <p>Главный режиссер</p>
+          </article>
+          <article class="team-card reveal delay-2">
+            <div class="team-photo photo-3"></div>
+            <h3>Мария Савчук</h3>
+            <p>Продюсер театральных проектов</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo footer-logo">
+          <span class="logo-mark">VC</span>
+          <span class="logo-text">Velvet Curtain</span>
+        </a>
+        <p>Театр как пространство эстетики, энергии и живого сопереживания.</p>
+      </div>
+      <div>
+        <h4>Меню</h4>
+        <a href="index.html">Главная</a>
+        <a href="performances.html">Афиша</a>
+        <a href="about.html">О театре</a>
+        <a href="contacts.html">Контакты</a>
+      </div>
+      <div>
+        <h4>Почта</h4>
+        <p>hello@velvetcurtain.by</p>
+        <p>PR и партнерства: partner@velvetcurtain.by</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
 </body>
 </html>
