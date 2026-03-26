@@ -176,22 +176,3 @@ subscribeForm.addEventListener('submit', (e) => {
 });
 
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', (e) => {
-    const target = document.querySelector(anchor.getAttribute('href'));
-    if (target) {
-      e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  });
-});
-
-const heroOverlay = document.querySelector('.hero-overlay');
-if (heroOverlay) {
-  window.addEventListener('scroll', () => {
-    const scrolled = window.scrollY;
-    if (scrolled < window.innerHeight) {
-      heroOverlay.style.transform = `translateY(${scrolled * 0.3}px)`;
-    }
-  }, { passive: true });
-}
