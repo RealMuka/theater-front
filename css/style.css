@@ -541,6 +541,12 @@ font-size: 1.2rem;
 flex-shrink: 0;
 }
 
+.contact-info {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
 .team-card { border-radius: var(--radius-md); overflow: hidden; padding: 0; }
 
 .team-photo {
@@ -569,11 +575,18 @@ font-size: 2rem;
 margin-bottom: 14px;
 }
 
+.faq {
+display: flex;
+flex-direction: column;
+gap: 5px
+}
+
 .faq-item {
 border-radius: var(--radius-sm);
 padding: 20px 24px;
 cursor: pointer;
 transition: border-color var(--transition);
+color: var(--gold)
 }
 
 .faq-item:hover { border-color: rgba(212, 170, 90, 0.3); }
